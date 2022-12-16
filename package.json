@@ -1,7 +1,7 @@
 {
-  "name": "@liting-yes/template",
-  "version": "0.1.0",
-  "description": "a basic template about front end",
+  "name": "vitepress-theme-liting",
+  "version": "0.0.0",
+  "description": "a theme about vitepress",
   "private": false,
   "publishConfig": {
     "access": "public",
@@ -11,13 +11,18 @@
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
-    "release": "release-it"
+    "release": "release-it",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
-    "template",
-    "frontend"
+    "vitepress",
+    "theme",
+    "vitepresstheme",
+    "liting"
   ],
-  "homepage": "https://github.com/dev-standard/template#readme",
+  "homepage": "https://github.com/liting-yes/vitepress-theme-liting#readme",
   "author": "liting-yes <luz.liting@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -30,7 +35,9 @@
     "husky": "^8.0.0",
     "inquirer": "8",
     "lint-staged": "^13.1.0",
-    "release-it": "^15.5.1"
+    "release-it": "^15.5.1",
+    "vitepress": "1.0.0-alpha.32",
+    "vue": "^3.2.45"
   },
   "config": {
     "commitizen": {

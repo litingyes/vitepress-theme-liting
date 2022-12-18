@@ -1,2 +1,4 @@
 LICENSN
 .husky
+node_modules
+cache

@@ -5,4 +5,4 @@
  * @LastEditTime: 2022-12-16 23:04:01
  * @FilePath: /template/commitlint.config.js
  */
-module.exports = { 'extends': [ '@commitlint/config-conventional' ]}
+module.exports = { extends: ['@commitlint/config-conventional'] }

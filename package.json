@@ -1,37 +1,39 @@
 {
   "name": "vitepress-theme-liting",
   "version": "0.0.0",
-  "description": "a theme about vitepress",
   "private": false,
+  "description": "a theme about vitepress",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "main": "src/index.js",
-  "scripts": {
-    "prepare": "husky install",
-    "commit": "git-cz",
-    "release": "release-it",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
+  "author": "liting-yes <luz.liting@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/liting-yes/vitepress-theme-liting#readme",
   "keywords": [
     "vitepress",
     "theme",
     "vitepresstheme",
     "liting"
   ],
-  "homepage": "https://github.com/liting-yes/vitepress-theme-liting#readme",
-  "author": "liting-yes <luz.liting@gmail.com>",
-  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "release": "release-it",
+    "docs:dev": "vitepress dev docs --host",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "format": "eslint --fix ."
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.34.0",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@commitlint/cz-commitlint": "^17.3.0",
     "@release-it/conventional-changelog": "^5.1.1",
     "commitizen": "^4.2.6",
-    "eslint-config-liting": "^0.3.0",
+    "eslint": "^8.30.0",
     "husky": "^8.0.0",
     "inquirer": "8",
     "lint-staged": "^13.1.0",
